@@ -1,0 +1,11 @@
+Si queremos agrupar los artículos por SECCIÓN y que nos muestre las columnas SECCIÓN Y PRECIO y en PRECIO aparezca la suma de sus artículos:
+SELECT SECCIÓN, SUM(PRECIOS) FROM PRODUCTOS GROUP BY SECCIÓN;
+Si queremos lo mismo, pero en vez de agrupados por SECCIÓN, sea por PAÍSDEORIGEN:
+SELECT PAÍSDEORIGEN, SUM(PRECIOS) FROM PRODUCTOS GROUP BY PAÍSDEORIGEN;
+Si además queremos que se ordenen las sumas de los precios de menor a mayor, tendríamos que darle un alias a SUM(PRECIOS), en este caso SUMPRECIOS.
+SELECT PAÍSDEORIGEN, SUM(PRECIOS) AS SUMPRECIOS FROM PRODUCTOS GROUP BY PAÍSDEORIGEN ORDER BY SUMPRECIOS;
+
+
+
+SELECT POBLACIÓN, COUNT(POBLACIÓN) AS CONTPOBLACIÓN FROM CLIENTES GROUP BY POBLACIÓN;
+SELECT SECCIÓN, MAX(PRECIO) FROM PRODUCTOS GROUP BY SECCIÓN HAVING SECCIÓN="CONFECCIÓN";

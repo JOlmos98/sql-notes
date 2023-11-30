@@ -1,0 +1,8 @@
+Si queremos mostrar la columna NOMBREARTÍCULOS, la de PRECIO y otra que se llame IVA y contengo el 21% del precio:
+SELECT NOMBREARTÍCULO, PRECIO, PRECIO*0.21 AS IVA FROM PRODUCTOS;
+Si en vez de eso quisiésemos una tabla con el precio y el iva sumado sería PRECIO*1.21 AS PRECIO_CON_IVA.
+
+ROUND(): Si ponemos ROUND(PRECIO*1.21,2) redondeará a dos decimales y no quedará tan largo el precio.
+NOW(): Si incluimos en los campos NOW() AS DIA_DE_HOY, nos aparecerá otra columna que contiene la fecha y la hora actual.
+DATEFIFF(): Nos devuelve la diferencia en días de dos fechas, en este caso sería DATEDIFF(NOW(),FECHA) y nos daría la columna.
+DATE_FORMAT(): NOW() Nos devuelve la fecha completa y su hora, si queremos que solo muestre el dia y el mes podemos hacerlo con DATE_FORMAT(NOW(),'%D-%M').
