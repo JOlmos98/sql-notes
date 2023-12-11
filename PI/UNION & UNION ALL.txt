@@ -1,0 +1,5 @@
+A veces tendremos que hacer consultas de dos o más tablas, para unir las tablas usaremos UNION así:
+SELECT * FROM TABLA1 WHERE SECCIÓN='DEPORTES' UNION SELECT * FROM TABLA1 WHERE SECCION='CERÁMICA';
+
+Si en vez de usar UNION usamos UNION ALL la consulta mostrará todos los datos aunque se repitan, es decir,
+el uso de UNION suprime los datos repetidos mostrandolos una única vez.

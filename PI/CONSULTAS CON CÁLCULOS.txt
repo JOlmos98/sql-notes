@@ -1,5 +1,6 @@
 Si queremos mostrar la columna NOMBREARTÍCULOS, la de PRECIO y otra que se llame IVA y contengo el 21% del precio:
 SELECT NOMBREARTÍCULO, PRECIO, PRECIO*0.21 AS IVA FROM PRODUCTOS;
+
 Si en vez de eso quisiésemos una tabla con el precio y el iva sumado sería PRECIO*1.21 AS PRECIO_CON_IVA.
 
 ROUND(): Si ponemos ROUND(PRECIO*1.21,2) redondeará a dos decimales y no quedará tan largo el precio.
