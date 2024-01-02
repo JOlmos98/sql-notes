@@ -1,5 +1,7 @@
 Si quieres ordenarlos según la SECCIÓN, se pondría después de completar el WHERE, 
+
 ORDER BY SECCIÓN;
 
 Si quieres ordenarlos por SECCIÓN y en cada sección se ordenen por precio pero en vez de menor a mayor, sea al revés,
+
 ORDER BY SECCIÓN, PRECIO DESC;
