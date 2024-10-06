@@ -1,0 +1,3 @@
+SQLite es una base de datos relacional de solo archivo, es decir, toda la base de datos se almacena en un solo archivo. Es ideal para aplicaciones pequeñas y embebidas, ya que no requiere un servidor o un sistema de archivos especial.
+
+Su compatibilidad con SQL es limitada y está más limitada y rinde menos que otras tecnologías como MySQL o PostgreSQL, pero es más práctica y sencilla para aplicaciones pequeñas
